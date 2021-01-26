@@ -1,10 +1,12 @@
-import styled from 'styled-components'
-import db from '../db.json'
-import Widget from '../src/components/Widget'
-import QuizBackground from '../src/components/QuizBackground'
-import Footer from '../src/components/Footer'
-import GithubCorner from '../src/components/GithubCorner'
-import Head from 'next/head'
+import React from 'react';
+import styled from 'styled-components';
+import db from '../db.json';
+import Head from 'next/head';
+import {useRouter} from 'next/router';
+import Widget from '../src/components/Widget';
+import QuizBackground from '../src/components/QuizBackground';
+import Footer from '../src/components/Footer';
+import GithubCorner from '../src/components/GithubCorner';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -18,6 +20,9 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
+
   return(
     <QuizBackground backgroundImage={db.bg}>
       <Head>
@@ -29,6 +34,19 @@ export default function Home() {
               <h1>Neural Networks</h1>
             </Widget.Header>
             <Widget.Content>
+              <form onSubmit= {function(infosDoEvento) {
+                infosDoEvento.preventDefault();
+                router.push(`/quiz?name=${name}`);
+              }} >
+                <input
+                  onChange={function (infosDoEvento) {
+                    setName(infosDoEvento.target.value);
+                  }}
+                placeholder="Insira seu nome de usuário" />
+                <button type="submit" disabled={name.length === 0}>
+                  Jogar
+                </button>
+              </form>
             </Widget.Content>
         </Widget>
 
