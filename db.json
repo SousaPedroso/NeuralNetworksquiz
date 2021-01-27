@@ -1,6 +1,7 @@
 {
-    "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
-    "title": "NeuralNetworksQuiz",
+    "bg": "/bg.png",
+    "bgImage": "/bgImage.svg",
+    "title": "Neural Networks Quiz",
     "description": "Você conhece o suficiente sobre Redes Neurais? Teste seu conhecimento e veja o quanto consegue acertar!",
     "questions": [
       {
