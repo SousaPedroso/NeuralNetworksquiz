@@ -8,7 +8,7 @@ import QuizBgImage from '../src/components/BgImage';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GithubCorner from '../src/components/GithubCorner';
-import Input from '../src/components/input';
+import Input from '../src/components/Input';
 import Button from '../src/components/Button';
 
 export const QuizContainer = styled.div`
