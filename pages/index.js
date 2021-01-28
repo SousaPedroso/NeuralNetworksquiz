@@ -4,10 +4,12 @@ import db from '../db.json';
 import Head from 'next/head';
 import {useRouter} from 'next/router';
 import Widget from '../src/components/Widget';
-import QuizBgImage from '../src/components/bgImage';
+import QuizBgImage from '../src/components/BgImage';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GithubCorner from '../src/components/GithubCorner';
+import Input from '../src/components/input';
+import Button from '../src/components/Button';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -41,16 +43,16 @@ export default function Home() {
                 infosDoEvento.preventDefault();
                 router.push(`/quiz?name=${name}`);
               }} >
-                <input
-                  onChange={function (infosDoEvento) {
-                    setName(infosDoEvento.target.value);
-                  }}
+                <Input
+                  name="nomeDoUsuario"
+                  onChange={(infosDoEvento) => {setName(infosDoEvento.target.value)}}
                   placeholder="Insira seu nome de usuário"
+                  value = {name}
                   maxLength={29}
                 />
-                <button type="submit" disabled={name.length === 0}>
+                <Button type="submit" disabled={name.length === 0}>
                   Jogar
-                </button>
+                </Button>
               </form>
             </Widget.Content>
         </Widget>
