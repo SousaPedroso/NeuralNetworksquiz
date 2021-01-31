@@ -2,7 +2,7 @@
     "bg": "/bg.png",
     "bgImage": "/bgImage.svg",
     "title": "Neural Networks Quiz",
-    "description": "Você conhece o suficiente sobre Redes Neurais? Teste seu conhecimento e veja o quanto consegue acertar!",
+    "description": "Você conhece bem Redes Neurais? Teste seu conhecimento e veja o quanto consegue acertar!",
     "questions": [
       {
         "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
