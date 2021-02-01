@@ -5,25 +5,113 @@
     "description": "Você conhece bem Redes Neurais? Teste seu conhecimento e veja o quanto consegue acertar!",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "title": "Por que Redeus Neurais têm esse nome?",
+        "description": "Essa é tranquilinha",
+        "answer": 1,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "São inspiradas na estrutura neural de organismos não inteligentes e que adquirem conhecimento através da experiência",
+          "São inspiradas na estrutura neural de organismos inteligentes e que adquirem conhecimento através da experiência",
+          "As conexões da rede formavam um neurônio",
+          "Simulam o cérebro humano"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "title": "Quando surgiu o conceito das Redes Neurais?",
+        "description": "Conceito, não popularização",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+          "1943",
+          "1944",
+          "1945",
+          "1989"
+        ]
+      },
+      {
+        "title": "Quais as principais Redes Neurais para classificação de imagens?",
+        "description": "Vamos aumentar um pouco a dificuldade",
+        "answer": 1,
+        "alternatives": [
+          "Recurrent Neural Networks(RNN)",
+          "Convolutional Neural Networks(CNN)",
+          "Neural Structured Learning(NSL)",
+          "Long short-term memory(LSTM)"
+        ]
+      },
+      {
+        "title": "Quais Redes Neurais intitulam A Aprendizagem Profunda?",
+        "description": "Essa é pegada!",
+        "answer": 3,
+        "alternatives": [
+          "Redes Neurais com mais de 1 camada",
+          "Redes Neurais com múltiplas camadas de saída",
+          "Perceptron",
+          "Redes Neurais com mais de 1 camada oculta"
+        ]
+      },
+      {
+        "title": "Qual o modelo de Redes Neurais com mais parâmetros?",
+        "description": "Acho que esse você conhece",
+        "answer": 3,
+        "alternatives": [
+          "Perceptron",
+          "ResNet",
+          "VGGNet",
+          "GPT-3"
+        ]
+      },
+      {
+        "title": "Quantos parâmetros possui o GPT-3?",
+        "description": "É bastante hein",
+        "answer": 0,
+        "alternatives": [
+          "175000000000",
+          "1500000000000",
+          "19500000000",
+          "345000000000"
+        ]
+      },
+      {
+        "title": "Qual dessas alternativas não é um hiperparâmetro?",
+        "description": "Não é tão difícil quanto parece",
+        "answer": 2,
+        "alternatives": [
+          "Taxa de aprendizado",
+          "Momentum",
+          "Número de saídas",
+          "Número de épocas"
+        ]
+      },
+      {
+        "title": "O que é aprendido ao longo das camadas das Redes Neurais Convolucionais?",
+        "description": "Isso é bem legal",
+        "answer": 1,
+        "alternatives": [
+          "Quais as características dos dados",
+          "As características dos dados, quanto mais profunda a rede, mais específicas as características aprendidas",
+          "As cores das imagens",
+          "O filtro das imagens e as faixas de frequência, quanto mais profunda a rede, mais faixas de frequências serão aprendidas"
+        ]
+      },
+      {
+        "title": "As Redes Neurais Recorrentes resolvem um problema comum das Redes Neurais com uma implementação um tanto quanto simples, qual implementação é essa?",
+        "description": "Não tão simples, mas consiste nisso",
+        "answer": 0,
+        "alternatives":[
+          "Loop",
+          "Se",
+          "Função de ativação",
+          "Função"
+        ]
+      },
+      {
+        "title": "Qual é o tipo de Rede Neural Artificial mais simples?",
+        "description": "Bem simples mesmo!",
+        "answer": 2,
+        "alternatives":[
+          "Auto-Encoder",
+          "Rede de Atenção",
+          "Perceptron",
+          "Redes Neurais Recorrentes"
         ]
       }
     ],

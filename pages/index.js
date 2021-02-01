@@ -61,7 +61,10 @@ export default function Home() {
                   value = {name}
                   maxLength={29}
                 />
-                <Button type="submit" disabled={name.length === 0}>
+                <Button type="submit"
+                  disabled={name.length === 0}
+                  title={name.length === 0? 'Digite seu nome de usuário para jogar': ''}
+                >
                   Jogar
                 </Button>
               </form>

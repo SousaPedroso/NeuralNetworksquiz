@@ -9,20 +9,39 @@ import AlternativesForm from '../../src/components/AlternativesForm';
 import BackLinkArrow from '../../src/components/BackLinkArrow';
 
 function ResultWidget({results}){
+    const numAcertos = results.filter((x) => x).length;
     return (
         <Widget>
             <Widget.Header>
+                <BackLinkArrow href="/"/>
                 Resultado final
             </Widget.Header>
 
             <Widget.Content>
-                <p>
-                    Você acertou
-                    {' '}
-                    {results.filter((x) => x).length}
-                    {' '}
-                    perguntas
-                </p>
+                {
+                numAcertos === 0 &&
+                    <p>
+                        Você acertou
+                        {' nenhuma '}
+                        pergunta
+                    </p>
+                }
+                {
+                    numAcertos % 2 === 0 && numAcertos !== 0 &&
+                    <p>
+                        Você acertou
+                        {' '}
+                        {results.filter((x) => x).length}
+                        {' '}
+                        perguntas
+                    </p>
+                }
+                {
+                    numAcertos % 2 === 1 &&
+                    <p>
+                        Você acertou 1 pergunta
+                    </p>
+                }
                 <ul>
                     {results.map((result, index) => (
                         <li key={`result__${result}`}>
@@ -46,7 +65,7 @@ function LoadingWidget(){
             </Widget.Header>
 
             <Widget.Content>
-                [Desafio do Loading]
+                Carregando
             </Widget.Content>
         </Widget>
     );
@@ -68,16 +87,6 @@ function QuestionWidget ({question, questionIndex, totalQuestions, onSubmit, add
                 </h3>
             </Widget.Header>
 
-            <img
-                alt="Descrição da questão"
-                style={{
-                    width: '100%',
-                    height: '150px',
-                    objectFit: 'cover',
-                }}
-                src={question.image}
-            />
-
             <Widget.Content>
                 <h2>
                     {question.title}
@@ -95,7 +104,7 @@ function QuestionWidget ({question, questionIndex, totalQuestions, onSubmit, add
                             onSubmit();
                             setIsQuestionSubmited(false);
                             setSelectedAlternative(undefined);
-                        }, 3 * 1000);
+                        }, 1 * 1000);
                     }}
                 >
                     {question.alternatives.map((alternative, alternativeIndex) => {
@@ -123,7 +132,7 @@ function QuestionWidget ({question, questionIndex, totalQuestions, onSubmit, add
                         );
                     })}
 
-                    <Button type="submit" disabled={!hasAlternativeSelected} >
+                    <Button type="submit" disabled={!hasAlternativeSelected || isQuestionSubmited } >
                         Confirmar resposta
                     </Button>
                     {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
