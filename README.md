@@ -1,78 +1,56 @@
-# Example app with styled-components
+<h1 align="center">Neural Networks</h1>
+<img src="https://github.com/SousaPedroso/NeuralNetworksquiz/blob/master/public/bg.png" alt="Neural Network">
 
-This example features how you use a different styling solution than [styled-jsx](https://github.com/zeit/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
+<h2 align="left"> Proposta </h2>
 
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components` (which is required for server side rendering). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
+<p>A Inteligência Artificial está cada vez mais presentes na vida cotidiana, dentre as diversas técnicas utilizadas, as Redes Neurais contêm grande destaque pois lidam com dados e uma maior quantidade de dados reflete em uma maior confiabilidade de suas predições. Você conhece bem Redes Neurais? Teste seu conhecimento neste quiz cuja idealização ocorreu através da <a href="https://www.alura.com.br/">Alura</a> durante a <a href="https://github.com/topics/aluraquiz">2º Imersão React</a> com a implementação de uma SPA.</p>
 
-## Deploy your own
+<h2 align="left"> Projeto </h2>
+<p>Será descrito aqui como o projeto pode ser implementado localmente, desde a instalação das dependências </p>
+<h3 align="left"> Instalação </h3>
+<p> <i>Clone</i> esse repositório e dentro do diretório raiz do projeto execute o comando</p>
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+```
+  $ npm install
+```
+<p>caso esteja utilizando o gerenciador de pacotes <strong>npm</strong>, ou então</p>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-styled-components&project-name=with-styled-components&repository-name=with-styled-components)
+```
+  $ yarn install
+```
+<p> caso esteja utilizando o gerenciador de pacotes <strong>yarn</strong> </p>
 
-## How to use
+<h3 align="left"></h3>
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+<h3 align="left"> Execução </h3>
 
-```bash
-npx create-next-app --example with-styled-components with-styled-components-app
-# or
-yarn create next-app --example with-styled-components with-styled-components-app
+<p> Se estiver usando o npm: </p>
+
+```
+  $ npm run dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+<p> Se estiver usando o yarn: </p>
+ 
+ ```
+  $ yarn dev
+ ```
 
-### Try it on CodeSandbox
+<ul>
+  <li>O server será iniciado na porta 3000, vá para <strong>localhost:3000</strong></li>
+</ul>
+ 
+ <h2 align="left"> Contribuição </h2>
+ 
+ <p> Encontrou algum problema ao executar o projeto ou gostaria de melhorá-lo? Siga os seguintes passos.</p>
+ <ol>
+  <li>Faça um Fork do projeto </li>
+  <li>Crie uma nova Branch para suas modificações </li>
+  <li>Comite suas modificações </li>
+  <li>Faça o Push da Branch </li>
+  <li>Abra um pull request </li>
+</ol>
 
-[Open this example on CodeSandbox](https://codesandbox.io/s/github/vercel/next.js/tree/canary/examples/with-styled-components)
+<h2 align="left"> Licença </h2>
 
-### Notes
-
-When wrapping a [Link](https://nextjs.org/docs/api-reference/next/link) from `next/link` within a styled-component, the [as](https://styled-components.com/docs/api#as-polymorphic-prop) prop provided by `styled` will collide with the Link's `as` prop and cause styled-components to throw an `Invalid tag` error. To avoid this, you can either use the recommended [forwardedAs](https://styled-components.com/docs/api#forwardedas-prop) prop from styled-components or use a different named prop to pass to a `styled` Link.
-
-<details>
-<summary>Click to expand workaround example</summary>
-<br />
-
-**components/StyledLink.js**
-
-```javascript
-import Link from 'next/link'
-import styled from 'styled-components'
-
-const StyledLink = ({ as, children, className, href }) => (
-  <Link href={href} as={as} passHref>
-    <a className={className}>{children}</a>
-  </Link>
-)
-
-export default styled(StyledLink)`
-  color: #0075e0;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    color: #40a9ff;
-  }
-
-  &:focus {
-    color: #40a9ff;
-    outline: none;
-    border: 0;
-  }
-`
-```
-
-**pages/index.js**
-
-```javascript
-import StyledLink from '../components/StyledLink'
-
-export default () => (
-  <StyledLink href="/post/[pid]" forwardedAs="/post/abc">
-    First post
-  </StyledLink>
-)
-```
-
-</details>
+- Distribuído sobre a licença MIT. Veja `LICENSE` para mais informações.
