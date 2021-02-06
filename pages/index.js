@@ -89,18 +89,19 @@ export default function Home() {
               {db.external.map((linkExterno) => {
 
                 const [projectName, githubUser] = linkExterno
-                .replace(/\//g, '')
-                .replace('https:', '')
-                .replace('.vercel.app', '')
+                .replace('https://', '')
+                .replace('.vercel.app/', '')
                 .split('.');
 
                 return (
                   <li key={linkExterno}>
                     <Widget.Topic
                       as={Link}
-                      href={`/quiz/${projectName}___${githubUser}`}
+                      data-disabled={name.length === 0}
+                      href={name.length === 0? 'javascript:void(0)': `quiz/${projectName}___${githubUser}`}
+                      title= {name.length === 0? 'Digite seu nome de usuário para jogar': ''}
                     >
-                      {`${githubUser}/${projectName}`}
+                      {`${projectName}/${githubUser}`}
                     </Widget.Topic>
                   </li>
                 );
