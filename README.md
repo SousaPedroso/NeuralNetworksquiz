@@ -21,9 +21,9 @@
 <h1 align="center">Neural Networks</h1>
 
 <p align="center">
-  <a href="#--sobre-o-projeto">Sobre</a>
-  <a href="#--execução">Execução</a>
-  <a href="#--contribuição">Contribuição</a>
+  <a href="#--sobre-o-projeto">Sobre</a> |
+  <a href="#--execução">Execução</a> |
+  <a href="#--contribuição">Contribuição</a> |
   <a href="#--licença">Licença</a>
 </p>
 
