@@ -5,7 +5,7 @@
   <img alt="repo size" src="https://img.shields.io/badge/repo%20size-0.416%20KB-brightgreen">
   
   <a href="https://github.com/SousaPedroso/NeuralNetworksQuiz/commits/master">
-    <img alt="last commit" src="https://img.shields.io/badge/last%20commit-2021--02--01T20%3A30%3A22Z-red">
+    <img alt="last commit" src="https://img.shields.io/badge/last%20commit-2021--02--06-red">
   </a>
   
   <a href="https://github.com/SousaPedroso/NeuralNetworksquiz/blob/master/LICENSE">
