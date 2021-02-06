@@ -1,13 +1,44 @@
-<h1 align="center">Neural Networks</h1>
-<img src="https://github.com/SousaPedroso/NeuralNetworksquiz/blob/master/public/bg.png" alt="Neural Network">
+<p align="center">
+  
+  <img alt="languages" src="https://img.shields.io/badge/languages-1-yellowgreen">
+  
+  <img alt="repo size" src="https://img.shields.io/badge/repo%20size-0.416%20KB-brightgreen">
+  
+  <a href="https://github.com/SousaPedroso/NeuralNetworksQuiz/commits/master">
+    <img alt="last commit" src="https://img.shields.io/badge/last%20commit-2021--02--01T20%3A30%3A22Z-red">
+  </a>
+  
+  <a href="https://github.com/SousaPedroso/NeuralNetworksquiz/blob/master/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/SousaPedroso/NeuralNetworksQuiz">
+  </a>
+  
+  <a href="https://github.com/SousaPedroso/NeuralNetworksquiz/stargazers">
+    <img alt="Stars" src="https://img.shields.io/github/stars/SousaPedroso/NeuralNetworksQuiz">
+  </a>
+  
+</p>
 
-<h2 align="left"> Proposta </h2>
+<h1 align="center">Neural Networks</h1>
+
+<p align="center">
+  <a href="#--sobre-o-projeto">Sobre</a>
+  <a href="#--execução">Execução</a>
+  <a href="#--contribuição">Contribuição</a>
+  <a href="#--licença">Licença</a>
+</p>
+
+![](https://github.com/SousaPedroso/NeuralNetworksquiz/blob/master/public/bg.png)
+
+## [](https://github.com/SousaPedroso/NeuralNetworksQuiz#--sobre-o-projeto) 🖥 Sobre o projeto
 
 <p>A Inteligência Artificial está cada vez mais presentes na vida cotidiana, dentre as diversas técnicas utilizadas, as Redes Neurais contêm grande destaque pois lidam com dados e uma maior quantidade de dados reflete em uma maior confiabilidade de suas predições. Você conhece bem Redes Neurais? Teste seu conhecimento neste quiz cuja idealização ocorreu através da <a href="https://www.alura.com.br/">Alura</a> durante a <a href="https://github.com/topics/aluraquiz">2º Imersão React</a> com a implementação de uma SPA.</p>
 
-<h2 align="left"> Projeto </h2>
+## [](https://github.com/SousaPedroso/NeuralNetworksQuiz#--execução) 🚀 Execução
+
 <p>Será descrito aqui como o projeto pode ser implementado localmente, desde a instalação das dependências </p>
-<h3 align="left"> Instalação </h3>
+
+### 🛠 Instalação
+
 <p> <i>Clone</i> esse repositório e dentro do diretório raiz do projeto execute o comando</p>
 
 ```
@@ -20,9 +51,7 @@
 ```
 <p> caso esteja utilizando o gerenciador de pacotes <strong>yarn</strong> </p>
 
-<h3 align="left"></h3>
-
-<h3 align="left"> Execução </h3>
+### ⏰ Executar
 
 <p> Se estiver usando o npm: </p>
 
@@ -40,7 +69,7 @@
   <li>O server será iniciado na porta 3000, vá para <strong>localhost:3000</strong></li>
 </ul>
  
- <h2 align="left"> Contribuição </h2>
+## [](https://github.com/SousaPedroso/NeuralNetworksQuiz#--contribuição) 🤔 Contribuição
  
  <p> Encontrou algum problema ao executar o projeto ou gostaria de melhorá-lo? Siga os seguintes passos.</p>
  <ol>
@@ -51,6 +80,6 @@
   <li>Abra um pull request </li>
 </ol>
 
-<h2 align="left"> Licença </h2>
+## [](https://github.com/SousaPedroso/NeuralNetworksQuiz#--licença)  📝Licença
 
-- Distribuído sobre a licença MIT. Veja `LICENSE` para mais informações.
+Distribuído sobre a licença MIT. Veja [LICENSE](https://github.com/SousaPedroso/NeuralNetworksquiz/blob/master/LICENSE) para mais informações.
